@@ -1,5 +1,7 @@
 import sys
-from math import floor,ceil,factorial as fact,pow,log2,log10,log
+from math import floor,ceil,factorial as fact,pow,log2,log10,log,pi as PI
+
+MOD=int(pow(10,9)+7)
 
 def isprime(n):
     if(n<=1):return False
@@ -10,14 +12,22 @@ def isprime(n):
         if(n%i==0 or n%(i+2)==0):return False
         i=i+6
     return True
+    
+def sortbyindex(a,ind,rev=False):
+    return sorted(a,key=lambda a:a[ind],reverse=rev)
+
 def linput():
     return list(map(int,sys.stdin.readline().strip().split()))
 
 
-for _ in range(int(input())):
+def solve():
     l=linput()
-    print(l)
-    print(isprime(13))
+    print(PI)
+
+__=1
+__=int(input())
+for _ in range(__):
+    solve()
 
 
 
