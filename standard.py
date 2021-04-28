@@ -1,8 +1,20 @@
 import sys
-from math import floor,ceil,factorial as fact,pow,log2,log10,log,pi as PI
-
+from math import (floor,ceil,factorial as fact,pow,log2,log10,log,pi as PI)
+testcases=True
+# testcases=False
 MOD=int(pow(10,9)+7)
+################################ Main Code ################################
 
+def solve():
+    l=linput()
+    print()
+
+
+
+
+
+
+################################### END ###################################
 def isprime(n):
     if(n<=1):return False
     if(n<=3):return True
@@ -18,20 +30,14 @@ def sortbyindex(a,ind,rev=False):
 
 def linput():
     return list(map(int,sys.stdin.readline().strip().split()))
-
-
-def solve():
-    l=linput()
-    print(PI)
+    
 
 __=1
-__=int(input())
+if(testcases):
+    __=int(input())
 for _ in range(__):
     solve()
-
-
-
-
+    
 
 '''
 Python Template:
